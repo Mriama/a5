@@ -1,0 +1,8 @@
+.formres {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formres > * {
+    width: 300px;
+  }
