@@ -1,8 +1,17 @@
-.formres {
+#res {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
   }
   
-  .formres > * {
-    width: 300px;
+  .card {
+    width: 500px;
+    position: relative;
+    left: 25px;
+  
+  }
+  h1{
+    text-align: center;
+  }
+  .image{
+    width: 500px;
   }

@@ -1,23 +1,65 @@
-<div class="container formres">
-  <div class="col s6 cat" >
-<mat-card class="example-card">
-    <img class="image" mat-card-image src="data:image/jpg;base64,{{bienn.images[0].image}}">
-      <mat-card-content>
-         {{bienn.nombien}}    
-         {{bienn.prix}}
-         {{bienn.description}}
-      </mat-card-content>
- </mat-card>
-    </div>
+<div class="">
+  <h1>Reservation</h1>
+<div class="row" id="res">
+  <div class="cat" >
+    <mat-card class="card">
+        <img class="image" mat-card-image src="data:image/jpg;base64,{{bienn.images[0].image}}">
+          <mat-card-content>
+            {{bienn.nombien}}    
+            {{bienn.prix}}
+            {{bienn.description}}
+          </mat-card-content>
+    </mat-card>
+  </div>
 
-    <div>
-          <h1>Reservation</h1>
-          <input matInput placeholder="numeropiece">
-          <input matInput placeholder="nomclient">  
-          <input matInput placeholder="telclient">  
-          <input matInput placeholder="adressclient">  
-          <input matInput placeholder="mailclient">  
-          <input matInput placeholder="password">  
-    </div>
+    <div class="">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+              </div>
 
+              <div class="row">
+                    <div class="input-field col s12">
+                      <input placeholder="Placeholder" id="" type="number" class="validate">
+                      <label for="first_name">Numero Piece</label>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="input-field col s12">
+                      <input placeholder="Placeholder" id="" type="number" class="validate">
+                      <label for="first_name">Telephone</label>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="input-field col s12">
+                      <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                      <label for="first_name">Adresse</label>
+                    </div>
+               </div>
+
+              
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+              </button>            
+            </form>
+          </div>
+                
+    </div>    
 </div>

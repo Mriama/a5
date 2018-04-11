@@ -24,6 +24,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { DetailComponent } from './immobiler/detail/detail.component';
 import { RouterModule , Routes} from '@angular/router';
 import { AfficheurComponent } from './immobiler/afficheur/afficheur.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 
 
 
@@ -64,7 +66,8 @@ import { AfficheurComponent } from './immobiler/afficheur/afficheur.component';
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
-    RouterModule.forRoot(approute)
+    RouterModule.forRoot(approute),
+    MatPaginatorModule
 
           
   ],
@@ -78,7 +81,8 @@ import { AfficheurComponent } from './immobiler/afficheur/afficheur.component';
      MatChipsModule,
      MatInputModule,
      MatFormFieldModule,
-     MatSelectModule
+     MatSelectModule,
+     MatPaginatorModule
 
     ],
   providers: [BienService],

@@ -13,11 +13,15 @@
 
 
     <div class="example-container">
-        <input matInput placeholder="Localite">
         <input matInput placeholder="Prix">
       <mat-form-field>
-        <mat-select placeholder="Typebien">
-          <mat-option value="option">Option</mat-option>
+        <mat-select placeholder="type">
+          <mat-option value="option" *ngFor="let type of types"[value]="type.id" >{{type.nomtypebien}}</mat-option>
+        </mat-select>
+      </mat-form-field>       
+      <mat-form-field>
+        <mat-select placeholder="Localite">
+          <mat-option value="option" *ngFor="let localite of localites"[value]="localite.id" >{{localite.nomlocalite}}</mat-option>
         </mat-select>
       </mat-form-field>
     </div>
