@@ -4,62 +4,54 @@
   <div class="cat" >
     <mat-card class="card">
         <img class="image" mat-card-image src="data:image/jpg;base64,{{bienn.images[0].image}}">
-          <mat-card-content>
-            {{bienn.nombien}}    
-            {{bienn.prix}}
-            {{bienn.description}}
-          </mat-card-content>
+          
+        <mat-card>
+            <mat-card-content>
+              <mat-tab-group class="demo-tab-group">
+                <mat-tab label="Detail">
+                  <div class="demo-tab-content">
+
+                        <mat-card-content>
+                          {{bienn.nombien}}    
+                          {{bienn.prix}}
+                          {{bienn.description}}
+                        </mat-card-content>
+                  </div>
+                </mat-tab>
+                <mat-tab label="Image">
+                  <div class="demo-tab-content">
+                  </div>  
+                </mat-tab>
+              </mat-tab-group>
+            </mat-card-content>
+          </mat-card>
+        
+        
+        
+       
     </mat-card>
   </div>
 
-    <div class="">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                  <label for="first_name">First Name</label>
-                </div>
-              </div>
-
-              <div class="row">
-                    <div class="input-field col s12">
-                      <input placeholder="Placeholder" id="" type="number" class="validate">
-                      <label for="first_name">Numero Piece</label>
-                    </div>
-              </div>
-
-              <div class="row">
-                    <div class="input-field col s12">
-                      <input placeholder="Placeholder" id="" type="number" class="validate">
-                      <label for="first_name">Telephone</label>
-                    </div>
-              </div>
-
-              <div class="row">
-                    <div class="input-field col s12">
-                      <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                      <label for="first_name">Adresse</label>
-                    </div>
-               </div>
-
-              
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="password" type="password" class="validate">
-                  <label for="password">Password</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
-                </div>
-              </div>
-              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                    <i class="material-icons right">send</i>
-              </button>            
-            </form>
-          </div>
                 
-    </div>    
+   
+
+<mat-card>
+  <mat-card-content>
+    <h2 class="example-h2">Formulaire Reservation</h2>
+    <mat-tab-group class="demo-tab-group">
+      <mat-tab label="Connection">
+        <div class="demo-tab-content">
+          <app-form-connection></app-form-connection>
+        </div>
+      </mat-tab>
+      <mat-tab label="Inscription">
+        <div class="demo-tab-content">
+         <app-form-inscription></app-form-inscription>
+        </div>  
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>
+
+</div>    
 </div>

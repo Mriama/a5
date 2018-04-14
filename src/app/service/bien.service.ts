@@ -3,8 +3,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable,ObservableInput} from 'rxjs/Observable';
 import { Localite } from './../interface/localite';
-import { Typebien } from './../interface/type';
+import { Typebien } from './../interface/type'; 
+import{ HttpHeaders } from '@angular/common/http';
 
+const httpOptions = {
+  headers: new HttpHeaders({
+  'content-Type': 'application/json'
+})
+};
 @Injectable()
 export class BienService {
 
@@ -29,6 +35,9 @@ export class BienService {
    getBien(id: number):Observable<any>{
     return this.http.get(this.bien+`/${id}`)
   };
-
+Reservation='http://127.0.0.1:8000/reservation';
+addReserv(idBien,client):Observable<any>{
+  return this.http.post(this.Reservation+`/${idBien}`,JSON.parse(JSON.stringify(client)),httpOptions)
+}
 }
   

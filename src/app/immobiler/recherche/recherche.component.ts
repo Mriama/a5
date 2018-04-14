@@ -26,6 +26,8 @@ export class RechercheComponent implements OnInit {
 
   });
 
+  
+
 
 }
 }

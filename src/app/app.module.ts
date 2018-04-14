@@ -22,9 +22,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { DetailComponent } from './immobiler/detail/detail.component';
-import { RouterModule , Routes} from '@angular/router';
+import { RouterModule , Routes } from '@angular/router';
 import { AfficheurComponent } from './immobiler/afficheur/afficheur.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { FormsModule }   from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { FormInscriptionComponent } from './immobiler/form-inscription/form-inscription.component';
+import { FormConnectionComponent } from './immobiler/form-connection/form-connection.component'; 
+import { MatTabsModule } from '@angular/material/tabs';
+
 
 
 
@@ -47,7 +53,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     FooterComponent,
     FormBienComponent,
     DetailComponent,
-    AfficheurComponent
+    AfficheurComponent,
+    FormInscriptionComponent,
+    FormConnectionComponent
     
   ],
   imports: [
@@ -67,7 +75,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatFormFieldModule,
     MatSelectModule,
     RouterModule.forRoot(approute),
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule,
+    NgxPaginationModule,
+    MatTabsModule
 
           
   ],
@@ -82,7 +93,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
      MatInputModule,
      MatFormFieldModule,
      MatSelectModule,
-     MatPaginatorModule
+     MatPaginatorModule,
+     FormsModule,
+     NgxPaginationModule,
+     MatTabsModule
 
     ],
   providers: [BienService],

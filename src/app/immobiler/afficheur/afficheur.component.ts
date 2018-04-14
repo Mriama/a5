@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./afficheur.component.css']
 })
 export class AfficheurComponent implements OnInit {
+  p: number = 1;
   biens:Bien[];
   constructor( private data: BienService ) { }
 
