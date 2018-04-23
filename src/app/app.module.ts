@@ -30,6 +30,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { FormInscriptionComponent } from './immobiler/form-inscription/form-inscription.component';
 import { FormConnectionComponent } from './immobiler/form-connection/form-connection.component'; 
 import { MatTabsModule } from '@angular/material/tabs';
+import { RechercherPipe } from './rechercher.pipe';
 
 
 
@@ -39,7 +40,10 @@ import { MatTabsModule } from '@angular/material/tabs';
 
  const approute:Routes=[
   { path:"",component:ImmobilerComponent},
-  { path:"Detail/:id",component:DetailComponent}
+  { path:"Detail/:id",component:DetailComponent},
+  { path:"inscription",component:FormInscriptionComponent},
+  { path:"connexion",component:FormConnectionComponent}
+
 ]
 
 
@@ -55,7 +59,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     DetailComponent,
     AfficheurComponent,
     FormInscriptionComponent,
-    FormConnectionComponent
+    FormConnectionComponent,
+    RechercherPipe
     
   ],
   imports: [

@@ -1,23 +1,17 @@
 <app-header></app-header>
-
-
-
-
-<div class="container">
-    <app-recherche></app-recherche>
+<div class="ima">
+    <img width="1285px"  src="assets/images/4.jpg" alt="">
 </div>
-
-
-<div class="row" id="catalog" >
+<div class="container rech">
+    <app-recherche (dolar)="dolar($event)"></app-recherche>
+</div>
+<div class="row" id="catalog">
 <div class="container">
-<div class="col s6 cat" *ngFor="let Bien of biens | paginate: { itemsPerPage: 2, currentPage: p }" >
+<div class="col s6 cat" *ngFor="let Bien of biens | rechercher: args:bodio | paginate: { itemsPerPage: 4, currentPage: p }  " >
 <app-catalogue [biens]="Bien"></app-catalogue>
 </div>
 <pagination-controls (pageChange)="p = $event" previousLabel="Precedant"  nextLabel="suivant"></pagination-controls>
 
 </div>
 </div>
-
-
-
 <app-footer></app-footer>

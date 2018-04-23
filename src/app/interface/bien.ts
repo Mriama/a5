@@ -1,10 +1,13 @@
+import { Localite } from './localite';
+import { Typebien } from './type';
+
 export interface Bien {
-    id:number,
+    id: number,
     nombien: string,
     prix: number,
     description: string,
     etat: number,
-    typebien: string,
-    localite: string,
+    typebien: Typebien,
+    localite: Localite,
     images: Blob,
 }

@@ -35,6 +35,7 @@ export class BienService {
    getBien(id: number):Observable<any>{
     return this.http.get(this.bien+`/${id}`)
   };
+  
 Reservation='http://127.0.0.1:8000/reservation';
 addReserv(idBien,client):Observable<any>{
   return this.http.post(this.Reservation+`/${idBien}`,JSON.parse(JSON.stringify(client)),httpOptions)

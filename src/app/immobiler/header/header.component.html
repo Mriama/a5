@@ -1,12 +1,15 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="tlb">
   <mat-toolbar-row>
-    <span>JINA IMMO</span>
-
+    <span>
+    <img width="100" src="assets/images/immo.png" alt=""><br>
+    <span class="titr">JINA IMMO</span>
+    </span>
     <span class="example-spacer"></span>
-    
-    <button mat-button>About</button>
-    <button mat-button>Services</button>
-    <button mat-button>Contact</button>
+    <button mat-button><a routerLink="">Accueil</a></button>    
+    <button mat-button><a routerLink="/inscription">Inscription</a></button>
+    <button mat-button><a routerLink="/connexion">Connexion</a></button>
+
+
   </mat-toolbar-row>
 </mat-toolbar>
 
