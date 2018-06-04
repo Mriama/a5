@@ -31,6 +31,10 @@ import { FormInscriptionComponent } from './immobiler/form-inscription/form-insc
 import { FormConnectionComponent } from './immobiler/form-connection/form-connection.component'; 
 import { MatTabsModule } from '@angular/material/tabs';
 import { RechercherPipe } from './rechercher.pipe';
+import { AdminComponent } from './admin/admin.component';
+import { ListResComponent } from './admin/list-res/list-res.component';
+import { OnreserveComponent } from './admin/onreserve/onreserve.component';
+import { ValidationComponent } from './admin/validation/validation.component';
 
 
 
@@ -42,7 +46,10 @@ import { RechercherPipe } from './rechercher.pipe';
   { path:"",component:ImmobilerComponent},
   { path:"Detail/:id",component:DetailComponent},
   { path:"inscription",component:FormInscriptionComponent},
-  { path:"connexion",component:FormConnectionComponent}
+  { path:"connexion",component:FormConnectionComponent},
+  { path:"reservation",component:AdminComponent},
+  { path:"onreserve/:id",component:OnreserveComponent},
+  { path:"validation/:id",component:ValidationComponent}
 
 ]
 
@@ -60,7 +67,11 @@ import { RechercherPipe } from './rechercher.pipe';
     AfficheurComponent,
     FormInscriptionComponent,
     FormConnectionComponent,
-    RechercherPipe
+    RechercherPipe,   
+    AdminComponent,
+    ListResComponent,
+    OnreserveComponent,
+    ValidationComponent
     
   ],
   imports: [

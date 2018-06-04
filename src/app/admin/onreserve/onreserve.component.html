@@ -1,0 +1,37 @@
+<div class="container">
+<div class="row vid">
+      <div class="col-lg-6">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+                <img class="image" width="50" mat-card-image src="data:image/jpg;base64,{{un.bien.images[0].image}}">
+              <span class="card-title">Information du bien</span>
+            </div>
+            <div class="card-content">
+              <p>Nom bien: {{un.bien.nombien}}</p>
+              <p>Prix location: {{un.bien.prix}}</p>
+              <p>Type bien: {{un.bien.typebien.nomtypebien}}</p>
+              <p> Localité: {{un.bien.localite.nomlocalite}}</p>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+          <div class="col s12 m7">
+            <div class="card" style="width:300px;">  
+                <div class="card-image">
+                    
+                 <span class="card-title">Information du client</span>
+                </div>        
+              <div class="card-content">
+                <p>Nom client: {{un.client.nomclient}}</p>
+                <p>Email: {{un.client.mailclient}}</p>
+                <p>Adresse: {{un.client.adressclient}}</p>
+                <p> Tel: {{un.client.telclient}}</p>
+              </div>          
+            </div>
+          </div>
+        </div>
+  </div>
+   <button mat-button><a routerLink="/validation/{{un.id}}" class="btn btn-primary">Valider</a></button>
+</div>

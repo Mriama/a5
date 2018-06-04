@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+<table>
+  <thead>
+    <tr>
+        <th>Nom bien</th>
+        <th>Nom client</th>
+        <th>Image</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let reservation of reserve">
+      <td>{{reservation.bien.nombien}}</td>
+      <td>{{reservation.client.nomclient}}</td>
+      <td><img class="image"  width="150" mat-card-image src="data:image/jpg;base64,{{reservation.bien.images[0].image}}"></td>
+      <td> <button mat-button><a routerLink="/onreserve/{{reservation.id}}" class="btn btn-primary">Détails</a></button></td>
+    </tr>
+   
+  </tbody>
+  </table>
+  </div>
+</div>
